@@ -44,6 +44,7 @@ form {
     color: #272044;
 }
 
+
 .button {
     margin-left: 10px;
     background: #241e92;
@@ -64,6 +65,10 @@ form {
     border-left: 3px solid #241e92;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
     
+}
+
+.poem strong {
+    color: #241e92;
 }
 
 footer {
