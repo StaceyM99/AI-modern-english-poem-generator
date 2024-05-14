@@ -18,6 +18,10 @@ function generatePoem(event) {
     let prompt = `User Idea: Generate a poem using GenZ language and humour about ${poemIdeaInput.value}`;
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+    let poemElement = document.querySelector("#poem");
+    poemElement.classList.remove("hidden");
+    poemElement.innerHTML = `<div class="blink">Generating bars about ${poemIdeaInput.value}</div>`;
+
     axios.get(apiURL).then(displayPoem);
 
 
